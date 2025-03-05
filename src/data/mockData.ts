@@ -14,7 +14,35 @@ export const featuredGames: FeaturedGame[] = [
     publisher: 'Galaxy Games',
     description: 'Embark on an epic journey across the stars in this groundbreaking space RPG. Explore uncharted planets, encounter alien civilizations, and shape the fate of the galaxy through your choices.',
     releaseYear: '2025',
-    trailer: 'https://example.com/trailer1'
+    trailer: 'https://example.com/trailer1',
+    achievements: [
+      { id: '1', name: 'Space Pioneer', description: 'Complete your first interstellar journey', rarity: 'Common' },
+      { id: '2', name: 'Galactic Hero', description: 'Save an alien civilization', rarity: 'Rare' },
+      { id: '3', name: 'Master Explorer', description: 'Discover all planets in the Andromeda sector', rarity: 'Legendary' }
+    ],
+    features: [
+      'Procedurally generated galaxies',
+      'Dynamic faction system',
+      'Real-time space combat',
+      'Advanced character customization',
+      'Multiple story paths'
+    ],
+    systemRequirements: {
+      minimum: {
+        os: 'Windows 10 64-bit',
+        processor: 'Intel Core i5-8400',
+        memory: '16 GB RAM',
+        graphics: 'NVIDIA GTX 1660',
+        storage: '100 GB'
+      },
+      recommended: {
+        os: 'Windows 11 64-bit',
+        processor: 'Intel Core i7-12700K',
+        memory: '32 GB RAM',
+        graphics: 'NVIDIA RTX 4070',
+        storage: '100 GB SSD'
+      }
+    }
   },
   {
     id: '2',
@@ -29,7 +57,35 @@ export const featuredGames: FeaturedGame[] = [
     publisher: 'Future Entertainment',
     description: 'Dive into a dystopian cyberpunk world where corporations rule and technology has transformed humanity. Navigate the neon-lit streets as a rogue hacker fighting against the system.',
     releaseYear: '2024',
-    trailer: 'https://example.com/trailer2'
+    trailer: 'https://example.com/trailer2',
+    achievements: [
+      { id: '1', name: 'Digital Ghost', description: 'Complete a mission without being detected', rarity: 'Rare' },
+      { id: '2', name: 'Master Hacker', description: 'Breach all types of security systems', rarity: 'Epic' },
+      { id: '3', name: 'Revolution Leader', description: 'Unite all resistance factions', rarity: 'Legendary' }
+    ],
+    features: [
+      'Dynamic hacking system',
+      'Branching narrative',
+      'Customizable cybernetic implants',
+      'Reactive world state',
+      'Multiple endings'
+    ],
+    systemRequirements: {
+      minimum: {
+        os: 'Windows 10 64-bit',
+        processor: 'AMD Ryzen 5 3600',
+        memory: '16 GB RAM',
+        graphics: 'NVIDIA RTX 2060',
+        storage: '120 GB'
+      },
+      recommended: {
+        os: 'Windows 11 64-bit',
+        processor: 'AMD Ryzen 7 7800X',
+        memory: '32 GB RAM',
+        graphics: 'NVIDIA RTX 4080',
+        storage: '120 GB SSD'
+      }
+    }
   },
   {
     id: '3',
@@ -44,7 +100,35 @@ export const featuredGames: FeaturedGame[] = [
     publisher: 'Legend Games',
     description: 'Enter a vast fantasy world inspired by ancient mythology. Forge your destiny as a hero chosen by the gods, battle legendary creatures, and uncover the secrets of a forgotten civilization.',
     releaseYear: '2024',
-    trailer: 'https://example.com/trailer3'
+    trailer: 'https://example.com/trailer3',
+    achievements: [
+      { id: '1', name: 'Divine Champion', description: 'Defeat your first god', rarity: 'Epic' },
+      { id: '2', name: 'Mythic Scholar', description: 'Discover all ancient artifacts', rarity: 'Legendary' },
+      { id: '3', name: 'Legend of the Realms', description: 'Complete all side quests', rarity: 'Ultra Rare' }
+    ],
+    features: [
+      'Vast open world',
+      'Dynamic weather system',
+      'Advanced combat mechanics',
+      'Deep crafting system',
+      'Mythological creatures'
+    ],
+    systemRequirements: {
+      minimum: {
+        os: 'Windows 10 64-bit',
+        processor: 'Intel Core i5-9600K',
+        memory: '16 GB RAM',
+        graphics: 'NVIDIA GTX 2070',
+        storage: '150 GB'
+      },
+      recommended: {
+        os: 'Windows 11 64-bit',
+        processor: 'Intel Core i9-13900K',
+        memory: '32 GB RAM',
+        graphics: 'NVIDIA RTX 4090',
+        storage: '150 GB SSD'
+      }
+    }
   }
 ];
 
@@ -126,116 +210,7 @@ export const games: Game[] = [
     releaseDate: '2024-03-28',
     developer: 'City Works',
     publisher: 'Metropolitan Games'
-  },
-  {
-id: '11',
-title: 'Galactic Conquest',
-coverImage: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-rating: 9.3,
-platforms: ['PC', 'PS5', 'Xbox Series X'],
-genres: ['Sci-Fi', 'Strategy', 'Simulation'],
-releaseDate: '2024-12-10',
-developer: 'Star Command',
-publisher: 'Universal Games'
-},
-{
-id: '12',
-title: 'Mystic Quest',
-coverImage: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-rating: 8.6,
-platforms: ['PC', 'PS5', 'Xbox Series X', 'Nintendo Switch'],
-genres: ['Fantasy', 'Adventure', 'Puzzle'],
-releaseDate: '2024-11-20',
-developer: 'Enchanted Studios',
-publisher: 'Magic Realm'
-},
-{
-id: '13',
-title: 'Shadow Realm',
-coverImage: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-rating: 8.9,
-platforms: ['PC', 'PS5', 'Xbox Series X'],
-genres: ['Horror', 'RPG', 'Action'],
-releaseDate: '2024-10-15',
-developer: 'Dark Visions',
-publisher: 'Nightfall Games'
-},
-{
-id: '14',
-title: 'Racing Rivals',
-coverImage: 'https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-rating: 8.4,
-platforms: ['PC', 'PS5', 'Xbox Series X'],
-genres: ['Racing', 'Sports'],
-releaseDate: '2024-09-30',
-developer: 'Speed Kings',
-publisher: 'Fast Track Entertainment'
-},
-{
-id: '15',
-title: 'Ancient Legends',
-coverImage: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-rating: 9.0,
-platforms: ['PC', 'PS5', 'Xbox Series X', 'Nintendo Switch'],
-genres: ['Fantasy', 'RPG', 'Open World'],
-releaseDate: '2024-08-05',
-developer: 'Mythical Creations',
-publisher: 'Legendary Games'
-},{
-id: '16',
-title: 'Cybernetic Uprising',
-coverImage: 'https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-rating: 8.7,
-platforms: ['PC', 'PS5', 'Xbox Series X'],
-genres: ['Cyberpunk', 'Action', 'RPG'],
-releaseDate: '2024-12-01',
-developer: 'Neon Studios',
-publisher: 'Future Vision'
-},
-{
-id: '17',
-title: 'Oceanic Adventure',
-coverImage: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-rating: 8.5,
-platforms: ['PC', 'PS5', 'Xbox Series X', 'Nintendo Switch'],
-genres: ['Adventure', 'Simulation', 'Exploration'],
-releaseDate: '2024-11-10',
-developer: 'Aqua Games',
-publisher: 'Blue Horizon'
-},
-{
-id: '18',
-title: 'Dungeon Siege',
-coverImage: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-rating: 9.2,
-platforms: ['PC', 'PS5', 'Xbox Series X'],
-genres: ['Fantasy', 'RPG', 'Strategy'],
-releaseDate: '2024-10-25',
-developer: 'Epic Quests',
-publisher: 'Heroic Games'
-},
-{
-id: '19',
-title: 'Galactic Racer',
-coverImage: 'https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-rating: 8.3,
-platforms: ['PC', 'PS5', 'Xbox Series X'],
-genres: ['Racing', 'Sci-Fi'],
-releaseDate: '2024-09-15',
-developer: 'Star Racers',
-publisher: 'Cosmic Speed'
-},
-{
-id: '20',
-title: 'Haunted Manor',
-coverImage: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-rating: 8.9,
-platforms: ['PC', 'PS5', 'Xbox Series X'],
-genres: ['Horror', 'Puzzle', 'Adventure'],
-releaseDate: '2024-08-31',
-developer: 'Ghostly Games',
-publisher: 'Phantom Entertainment'
-}
+  }
 ];
 
 export const genres: Genre[] = [
@@ -243,37 +218,55 @@ export const genres: Genre[] = [
     id: 'action',
     name: 'Action',
     image: 'https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80',
-    description: 'Fast-paced games focused on combat, reflexes, and overcoming physical challenges.'
+    description: 'Fast-paced games focused on combat, reflexes, and overcoming physical challenges.',
+    popularTags: ['Combat', 'Fast-Paced', 'Intense'],
+    featuredGames: ['1', '2', '5'],
+    totalGames: 150
   },
   {
     id: 'rpg',
     name: 'RPG',
     image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80',
-    description: 'Role-playing games where players assume the roles of characters in a fictional setting.'
+    description: 'Role-playing games where players assume the roles of characters in a fictional setting.',
+    popularTags: ['Story-Rich', 'Character Development', 'Choices Matter'],
+    featuredGames: ['1', '3', '8'],
+    totalGames: 200
   },
   {
     id: 'strategy',
     name: 'Strategy',
     image: 'https://images.unsplash.com/photo-1611891487122-207579d67d98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80',
-    description: 'Games that emphasize skillful thinking and planning to achieve victory.'
+    description: 'Games that emphasize skillful thinking and planning to achieve victory.',
+    popularTags: ['Tactical', 'Resource Management', 'Planning'],
+    featuredGames: ['6', '8', '9'],
+    totalGames: 100
   },
   {
     id: 'adventure',
     name: 'Adventure',
     image: 'https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80',
-    description: 'Games that focus on exploration, puzzle-solving, and narrative storytelling.'
+    description: 'Games that focus on exploration, puzzle-solving, and narrative storytelling.',
+    popularTags: ['Exploration', 'Story', 'Puzzle'],
+    featuredGames: ['2', '9', '10'],
+    totalGames: 180
   },
   {
     id: 'horror',
     name: 'Horror',
     image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80',
-    description: 'Games designed to scare players through atmosphere, sound design, and storytelling.'
+    description: 'Games designed to scare players through atmosphere, sound design, and storytelling.',
+    popularTags: ['Atmospheric', 'Survival', 'Dark'],
+    featuredGames: ['7', '5', '2'],
+    totalGames: 75
   },
   {
     id: 'racing',
     name: 'Racing',
     image: 'https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80',
-    description: 'Games that emphasize driving and competing in races with various vehicles.'
+    description: 'Games that emphasize driving and competing in races with various vehicles.',
+    popularTags: ['Competition', 'Vehicles', 'Speed'],
+    featuredGames: ['4', '8', '9'],
+    totalGames: 50
   }
 ];
 
@@ -286,7 +279,12 @@ export const reviews: Review[] = [
     gameId: '1',
     rating: 9.5,
     content: 'Stellar Odyssey is a masterpiece! The graphics are breathtaking, and the story kept me engaged for hours. The character development is top-notch, and the gameplay mechanics are innovative. Highly recommended!',
-    date: '2025-03-20'
+    date: '2025-03-20',
+    likes: 245,
+    helpful: 189,
+    totalPlayTime: '120h',
+    achievements: 28,
+    platform: 'PC'
   },
   {
     id: '2',
@@ -296,7 +294,12 @@ export const reviews: Review[] = [
     gameId: '1',
     rating: 8.8,
     content: 'An incredible space adventure with stunning visuals and a compelling narrative. The only downside is some minor performance issues on older hardware, but otherwise, it\'s a fantastic experience.',
-    date: '2025-03-18'
+    date: '2025-03-18',
+    likes: 156,
+    helpful: 120,
+    totalPlayTime: '85h',
+    achievements: 15,
+    platform: 'PS5'
   },
   {
     id: '3',
@@ -306,11 +309,16 @@ export const reviews: Review[] = [
     gameId: '2',
     rating: 9.0,
     content: 'Neon Shadows perfectly captures the cyberpunk aesthetic with its neon-lit environments and dystopian storyline. The hacking mechanics are innovative, and the combat feels fluid and responsive.',
-    date: '2024-11-10'
+    date: '2024-11-10',
+    likes: 189,
+    helpful: 145,
+    totalPlayTime: '95h',
+    achievements: 22,
+    platform: 'PC'
   }
 ];
 
-export const users: User[] = {
+export const users: User = {
   currentUser: {
     id: 'user1',
     username: 'GamerPro',
@@ -318,7 +326,37 @@ export const users: User[] = {
     email: 'gamerpro@example.com',
     joinDate: '2023-05-15',
     favoriteGenres: ['RPG', 'Action', 'Adventure'],
-    recentlyPlayed: ['1', '3', '5']
+    recentlyPlayed: ['1', '3', '5'],
+    level: 42,
+    totalPlayTime: '1250h',
+    achievements: {
+      total: 523,
+      rare: 89,
+      ultraRare: 12
+    },
+    friends: 156,
+    gamesOwned: 84,
+    status: 'online',
+    customStatus: 'Exploring the cosmos in Stellar Odyssey',
+    badges: [
+      { id: '1', name: 'Early Adopter', icon: '🌟' },
+      { id: '2', name: 'Achievement Hunter', icon: '🏆' },
+      { id: '3', name: 'Social Butterfly', icon: '🦋' }
+    ],
+    preferences: {
+      theme: 'dark',
+      notifications: {
+        friendRequests: true,
+        achievements: true,
+        gameUpdates: true,
+        communityPosts: true
+      },
+      privacy: {
+        profile: 'public',
+        gameLibrary: 'friends',
+        activityFeed: 'public'
+      }
+    }
   }
 } as unknown as User;
 
@@ -334,7 +372,15 @@ export const communityPosts: CommunityPost[] = [
     likes: 128,
     comments: 45,
     gameId: '1',
-    gameTitle: 'Stellar Odyssey'
+    gameTitle: 'Stellar Odyssey',
+    tags: ['Guide', 'Easter Egg', 'Secret'],
+    media: [
+      {
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1614294149010-950b698f72c0?ixlib=rb-4.0.3'
+      }
+    ],
+    pinned: true
   },
   {
     id: '2',
@@ -347,7 +393,14 @@ export const communityPosts: CommunityPost[] = [
     likes: 95,
     comments: 32,
     gameId: '2',
-    gameTitle: 'Neon Shadows'
+    gameTitle: 'Neon Shadows',
+    tags: ['Guide', 'Build', 'Tips'],
+    media: [
+      {
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3'
+      }
+    ]
   },
   {
     id: '3',
@@ -360,7 +413,14 @@ export const communityPosts: CommunityPost[] = [
     likes: 156,
     comments: 67,
     gameId: '3',
-    gameTitle: 'Mythic Realms'
+    gameTitle: 'Mythic Realms',
+    tags: ['Guide', 'Weapons', 'Locations'],
+    media: [
+      {
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3'
+      }
+    ]
   }
 ];
 
