@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroCarousel from '../components/HeroCarousel';
 import GameCarousel from '../components/GameCarousel';
-import { featuredGames, games, genres } from '../data/mockData';
+import { featuredGames, games, genres, users } from '../data/mockData';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
@@ -10,6 +10,15 @@ const HomePage: React.FC = () => {
   const getGamesByGenre = (genreName: string) => {
     return games.filter(game => game.genres.includes(genreName));
   };
+
+  // Get suggested games based on user's favorite genres
+  const suggestedGames = React.useMemo(() => {
+    const favoriteGenres = users.currentUser.favoriteGenres;
+    return games.filter(game => 
+      game.genres.some(genre => favoriteGenres.includes(genre)) &&
+      !users.currentUser.recentlyPlayed.includes(game.id)
+    ).sort(() => Math.random() - 0.5).slice(0, 10);
+  }, []);
 
   // Get recently added games (using the most recent release dates)
   const recentlyAddedGames = [...games].sort((a, b) => 
@@ -24,8 +33,17 @@ const HomePage: React.FC = () => {
       {/* Hero Carousel */}
       <HeroCarousel featuredGames={featuredGames} />
       
-      {/* Recently Added Games */}
       <div className="container mx-auto px-4">
+        {/* Suggested For You */}
+        <div className="relative">
+          <div className="absolute -top-16 left-0 right-0 h-32 bg-gradient-to-t from-game-black to-transparent z-10" />
+          <GameCarousel 
+            title={`Suggested For You`}
+            games={suggestedGames}
+          />
+        </div>
+        
+        {/* Recently Added Games */}
         <GameCarousel 
           title="Recently Added" 
           games={recentlyAddedGames} 
